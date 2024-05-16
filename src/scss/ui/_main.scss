@@ -1,0 +1,17 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.container {
+    @include m.container;
+
+    display: flex;
+    gap: 6rem;
+    flex-direction: column;
+    padding: 10rem 0 20rem 0;
+
+    @include m.tablet {
+        flex-direction: row;
+        gap: 2rem;
+        padding: 16.2rem 0 0 0;
+    }
+}

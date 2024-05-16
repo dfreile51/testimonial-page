@@ -1,0 +1,68 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.cards {
+    @include m.tablet {
+        width: 50%;
+        height: unset;
+    }
+
+    width: 100%;
+    height: 42.436rem;
+    position: relative;
+
+    .card {
+        background-color: v.$white;
+        border-radius: 1rem;
+        padding: 2.8rem 4rem;
+        width: 35.1rem;
+        box-shadow: 3px 3px 15px 0px rgba(0,0,0,0.1);
+
+        &--google, &--meta {
+            position: absolute;
+        }
+
+        &--google {
+            margin-top: 1rem;
+            top: 0;
+            right: 0;
+        }
+
+        &--meta {
+            bottom: 0;
+            left: 0;
+        }
+
+        &__logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        &__logo > img {
+            width: 8.7rem;
+        }
+
+        &__stars {
+            display: flex;
+            gap: 0.2rem;
+            width: 2.4rem;
+            height: 2.4rem;
+        }
+
+        &__author,
+        &__content {
+            font-size: 1.6rem;
+        }
+
+        &__author {
+            font-weight: v.$bold;
+            margin: 1.4rem 0 1rem 0;
+        }
+
+        &__content {
+            margin: 0;
+            line-height: 1.75;
+        }
+    }
+}

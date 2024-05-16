@@ -1,0 +1,23 @@
+@use 'variables' as v;
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: v.$font-principal;
+    background-color: v.$gray-light;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
