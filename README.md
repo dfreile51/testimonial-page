@@ -1,4 +1,4 @@
-# [Testimonial Page](https://devchallenges.io/challenge/business-blog-card)
+# [Testimonial Page](https://resplendent-genie-db81d5.netlify.app/)
 
 A simple testimonial page with images and texts.
 
